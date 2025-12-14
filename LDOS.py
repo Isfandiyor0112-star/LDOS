@@ -100,7 +100,7 @@ class AdvancedDNSFlooder:
             self.dns_servers = ["192.168.1.1"]
         elif choice == "2":
             self.dns_servers = ["8.8.8.8"]
-        elif choice == "4"
+        elif choice == "4":
           self.dns_servers = ["192.168.100.1"]
         elif choice == "3":
             self.dns_servers = ["1.1.1.1"]
