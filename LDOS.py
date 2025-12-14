@@ -87,11 +87,12 @@ class AdvancedDNSFlooder:
         
         # DNS серверы
         print("\nВыбор DNS серверов:")
-        print("1. Роутер (192.168.1.1)")
+        print("1. Comnet (192.168.1.1)")
         print("2. Google DNS (8.8.8.8)")
         print("3. Cloudflare (1.1.1.1)")
-        print("4. Все выше")
-        print("5. Указать свои")
+        print("4. Uztelecom (192.168.100.1)")
+        print("5. Все выше")
+        print("6. Указать свои")
         
         choice = input("Ваш выбор (1-5): ").strip()
         
@@ -99,11 +100,13 @@ class AdvancedDNSFlooder:
             self.dns_servers = ["192.168.1.1"]
         elif choice == "2":
             self.dns_servers = ["8.8.8.8"]
+        elif choice == "4"
+          self.dns_servers = ["192.168.100.1"]
         elif choice == "3":
             self.dns_servers = ["1.1.1.1"]
-        elif choice == "4":
-            self.dns_servers = ["192.168.1.1", "8.8.8.8", "1.1.1.1"]
         elif choice == "5":
+            self.dns_servers = ["192.168.1.1", "8.8.8.8", "1.1.1.1","192.168.100.1"]
+        elif choice == "6":
             custom = input("Введите DNS серверы через запятую: ").strip()
             self.dns_servers = [s.strip() for s in custom.split(',') if s.strip()]
         else:
