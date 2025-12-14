@@ -76,10 +76,10 @@ class AdvancedDNSFlooder:
         # Интенсивность
         while True:
             try:
-                threads = input("Количество потоков (1-50, по умолчанию 10): ").strip()
+                threads = input("Количество потоков (1-100, по умолчанию 10): ").strip()
                 self.threads = 10 if not threads else int(threads)
-                if not 1 <= self.threads <= 50:
-                    print("[!] Должно быть от 1 до 50")
+                if not 1 <= self.threads <= 100:
+                    print("[!] Должно быть от 1 до 100")
                     continue
                 break
             except:
